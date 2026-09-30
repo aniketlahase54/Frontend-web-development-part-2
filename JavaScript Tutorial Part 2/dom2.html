@@ -2,31 +2,27 @@
 <html lang="en">
   <head> </head>
   <body>
-    <h1>Heading tag</h1>
+    <h1>Heading 1</h1>
+
+    <h1>Heading 2</h1>
 
     <script>
-        let heading1 = (document.querySelector("h1"));
+      let heading1 = document.querySelector("h1"); //it will select only first occurance of element  
       function changeHeading() {
         heading1.innerText = "Aniket lahase";
       }
 
       function changeColor() {
-        heading1.style.color ="red";
-
+        heading1.style.color = "red";
       }
       function changeBgColor() {
-        heading1.style.backgroundColor ="black";
+        heading1.style.backgroundColor = "black";
         heading1.style.textAlign = "center";
-        
-        
       }
-
     </script>
-    
-    <button onclick="changeHeading()">update  dom</button>
+
+    <button onclick="changeHeading()">update dom</button>
     <button onclick="changeColor()">change color</button>
     <button onclick="changeBgColor()">change Bg color</button>
-
-</body>
-
+  </body>
 </html>
