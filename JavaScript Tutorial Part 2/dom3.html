@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <h1>Heading 1</h1>
+
+    <h1>Heading 2</h1>
+
+    <script>
+      let headings = document.querySelectorAll("h1"); //it will select all the instanced using index
+      function changeHeading() {
+        // headings[0].innerText = "Aniket lahase";
+        // headings[1].innerText = "Aniket lahase";
+
+        for (let i = 0; i <= headings.length; i++) {
+          headings[i].innerText = "Aniket Lahase";
+        }
+      }
+
+      function changeColor() {
+        // headings[0].style.color = "red";
+        // headings[1].style.color = "red";
+
+        for (let i = 0; i <= headings.length; i++) {
+          headings[i].style.color = "red";
+        }
+      }
+      function changeBgColor() {
+        // headings[0].style.backgroundColor = "black";
+        // headings[0].style.textAlign = "center";
+
+        // headings[1].style.backgroundColor = "black";
+        // headings[1].style.textAlign = "center";
+
+        for (let i = 0; i <= headings.length; i++) {
+          headings[i].style.backgroundColor = "black";
+          headings[i].style.textAlign = "center";
+        }
+      }
+    </script>
+
+    <button onclick="changeHeading()">update dom</button>
+    <button onclick="changeColor()">change color</button>
+    <button onclick="changeBgColor()">change Bg color</button>
+  </body>
+</html>
