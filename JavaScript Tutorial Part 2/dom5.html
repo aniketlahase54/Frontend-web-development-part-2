@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div{
+            width: 500px;
+            height: 600px;
+            margin: 100px auto;
+            box-shadow: 0px 0px 1px black ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+        img{
+            padding: 50px;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="panda.jpg" width="400px" height="300px" alt="">
+
+
+        <button onclick="changeToPhoto()">changeToIndiaGotLatent</button>
+      
+        <button onclick="changeToOld()">changeToPanda</button>
+    </div>
+
+    <script>
+        function changeToPhoto(){
+        let imgRef = document.querySelector("img")
+
+        imgRef.src="igl.jpg"
+        }
+
+        function changeToOld(){
+        let imgRef = document.querySelector("img")
+
+        imgRef.src="panda.jpg"
+        }
+    </script>
+</body>
+</html>
