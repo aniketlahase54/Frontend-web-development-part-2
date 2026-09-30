@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <div class="container"></div>
+    <div id ="aniket"> </div>
+
+    <script>
+        let div1 = document.querySelector(".container");
+
+        let div2 = document.querySelector("#aniket");
+
+        function div1Control(){
+            div1.innerHTML = "<h1> Hello this is div 1 </h1>";
+
+            div1.style.width = "400px";
+            div1.style.height = "400px";
+            div1.style.border = "2px solid black";
+            div1.style.margin = "100px auto";
+            div1.style.backgroundColor = "red"
+        }
+
+        function div2Control(){
+            div2.innerHTML = "<h1> Hello this is div 2 </h1>";
+
+            div2.style.width = "400px";
+            div2.style.height = "400px";
+            div2.style.border = "2px solid black";
+            div2.style.margin = "100px auto";
+            div2.style.backgroundColor = "purple"
+
+        }
+    </script>
+
+    <button onclick="div1Control()">update dom 1</button>
+     <button onclick="div2Control()">update dom 2</button>
+</body>
+</html>
