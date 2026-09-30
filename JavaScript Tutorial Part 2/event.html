@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1>Event listener javascript</h1>
+
+    <h2>H2 TAG</h2>
+
+    <!-- <button onclick="chageText()">Change</button> -->
+        <button>Change</button>
+
+    <script>
+        // function chageText(){
+        //     document.querySelector("h1").innerText="Anitet Lahase";
+        // }
+
+        let h1Ref = document.querySelector("h1");
+        let h2Ref = document.querySelector("h2");
+
+        document.addEventListener("click",function(){
+            h1Ref.innerText = "Aniket Lahase";
+            h1Ref.style.color = "red"
+        })
+
+          document.addEventListener("click",function(){
+            h2Ref.innerText = "Aniket Lahase";
+            h2Ref.style.color = "blue"
+        })
+
+        document.addEventListener("mouseover", ()=> {
+            console.log("function call")
+        })
+    </script>
+</body>
+</html>
