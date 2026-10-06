@@ -1,4 +1,5 @@
 import { useState } from "react";
+import User from "./User";
 
 function App(){
   // let name = "Aniket";
@@ -35,6 +36,10 @@ function App(){
       <h1>like : {likes}</h1>
       <button onClick={()=> setLike(likes+1)}>like</button>
       <button onClick={()=> setLike(likes-1)}>Dislike</button>
+
+      {/* separate code */}
+
+      <User/>
       
     </div>
   )
