@@ -1,122 +1,112 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
+  // const courses = ["HTML", "CSS", "JS", "React"];
 
-  return (
+  // const fruits = ["mango", "apple", "banana"];
+
+  // const numbers = [15, 85, 47, 96, 32, 58, 47];
+
+  const students = [
+    {
+      id : 1,
+      name : "aniket",
+      age : 22
+    },
+      {
+      id : 2,
+      name : "om",
+      age : 23
+    },
+      {
+      id : 3,
+      name : "rahul",
+      age : 21
+    },
+
+  ]
+  // console.log(courses);
+  // console.log(student);
+
+  return(
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+      <h1>app components</h1>
+      <table border="1" width="50%" hight="400px">
+        <thead align = "center">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+        <tbody align = "center">
+          {students.map((student) => {
+            return (
+              <tr key={student.id}>
+                <td>{student.id}</td>
+                <td>{student.name}</td>
+                <td>{student.age}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+
+    // {/* {
+    //     students.map((student)=>{
+    //       return(
+    //         <div>
+    //           <h3>ID : {student.id}</h3>
+    //           <h3>Name : {student.name}</h3>
+    //           <h3>Age : {student.age}</h3>
+    //           <hr />
+    //         </div>
+    //       )
+    //     })
+    //   } */}
+
+  
+     
+    //  {/* <h2>{courses[0]}</h2>
+    //   <h2>{courses[1]}</h2>
+    //   <h2>{courses[2]}</h2>
+    //   <h2>{courses[3]}</h2> */}
+    //   {/* <h4>course list</h4>
+    //   {courses.map((course, index) => {
+    //     return (
+    //       <h2 key={index}>
+    //         {index} - {course}
+    //       </h2>
+    //     );
+    //   })}
+    //   <hr />
+    //   <h4>fruits list</h4>
+    //   {fruits.map((fruit) => {
+    //     return <h2>{fruit.toUpperCase()}</h2>;
+    //   })}
+
+    //   <hr />
+    //   <h4>number list</h4>
+    //   {numbers.map((number) => {
+    //     return <h2>{number}</h2>;
+    //   })} */}
+
+    //   {/* <h2>{student[0].id}</h2>
+    //   <h2>{student[0].name}</h2>
+    //   <h2>{student[0].age}</h2>
+    //   <hr />
+    //   <h2>{student[1].id}</h2>
+    //   <h2>{student[1].name}</h2>
+    //   <h2>{student[1].age}</h2>
+    //   <hr />
+    //   <h2>{student[2].id}</h2>
+    //   <h2>{student[2].name}</h2>*/}
+
+     
+
+   
+
