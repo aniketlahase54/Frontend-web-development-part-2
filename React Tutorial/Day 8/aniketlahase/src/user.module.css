@@ -1,0 +1,14 @@
+.heading{
+    color: crimson;
+    background-color: black;
+    text-align: center;
+
+}
+
+.container{
+  width: 500px;
+  height: 300px;
+  box-shadow:  0px 0px 10px rgb(249, 171, 17);
+  margin: 100px auto;
+
+}
