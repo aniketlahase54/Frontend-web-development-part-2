@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import User from "./User";
 
 
 function App(){
@@ -39,7 +40,19 @@ const Div = styled.div`
 
   return(
     <div>
-      <Heading>app conponents</Heading>
+
+      <User/>
+
+
+
+
+
+
+
+
+
+
+      {/* <Heading>app conponents</Heading>
       <Heading>hello user</Heading>
 
       <Button>Login</Button>
@@ -51,7 +64,7 @@ const Div = styled.div`
          <Button>Register</Button>
          <h1 id="h1"> i am from pune</h1>
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima reprehenderit totam nihil in doloribus! Velit architecto, tenetur dolorum, non at facere cum, eaque consequatur asperiores deleniti aliquam accusantium optio ex?</p>
-      </Div>
+      </Div> */}
 
   
 
